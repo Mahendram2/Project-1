@@ -1,18 +1,18 @@
-# Space X Launch Gallery
+# Country Infomations 
 
-An app that shows a gallery of Space X Launches
+An app that shows many infomation about the country search for
 
 ## Technologies Used
 - HTML
 - CSS
 - Bootstrap
 - JavaScript/jQuery
-- Space X API
+- Restcountries API
 
 ## Screenshots
 
 ## Getting Started
 
-[Click here](https://google.com) to see the deployed app!
+[Click here](https://mahendracountries.netlify.app/) to see the deployed app!
 
 ## Future Enhancements

@@ -1,14 +1,15 @@
 /* IPO - Input Process Output */
 
 /* const - variable that never change/reassigned */
-const URL ='https://restcountries.com/v3.1/name/';
+const URL =`https://restcountries.com/v3.1/name/`;
 
 /* State - varibale that do change  */
 
 /* cashed element refference */
-const $title = $('#name');
-const $year = $('#cap');
-const $rated = $('#curr');
+const $country = $('#name');
+const $capital = $('#cap');
+const $region = $('#reg');
+const $lanuage = $('#lang')
 const $form = $('form');
 const $input = $('input[type="text"]');
 
@@ -19,18 +20,20 @@ $form.on('submit',handleSubmit);
 function handleSubmit(event){
     event.preventDefault();
 
-    const title = $input.val();
-    console.log('Submitted');
+    const locEnt = $input.val();
+    console.log('Submitted', locEnt);
     
-    if(!title) return;
-    const promise = $.ajax(`${URL}${title}`);
+    if(!locEnt) return;
+
+    const promise = $.ajax(`${URL}${locEnt}`);
     promise.then(   
     function (data){
         // Succes CallBack
         console.log('Data: ',data);
-        $title.text(data.name);
-        $year.text(data.capitol);
-        $rated.text(data.currencies.name);
+        $country.text(data[0].name.common);
+        $capital.text(data[0].capital);
+        $region.text(data[0].continents);
+        $lanuage.text(data[0].population);
 
     },
     function (error){
