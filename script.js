@@ -1,11 +1,9 @@
-/* IPO - Input Process Output */
-
-/* const - variable that never change/reassigned */
+/* Const */
 const URL =`https://restcountries.com/v3.1/name/`;
 
-/* State - varibale that do change  */
+/* State */
 
-/* cashed element refference */
+/* Cashed element Reference */
 const $country = $('#name');
 const $capital = $('#cap');
 const $region = $('#reg');
@@ -13,7 +11,7 @@ const $lanuage = $('#lang')
 const $form = $('form');
 const $input = $('input[type="text"]');
 
-/* Event listener */
+/* Event Listener */
 $form.on('submit',handleSubmit);
 
 /* Functions */
@@ -25,6 +23,7 @@ function handleSubmit(event){
     
     if(!locEnt) return;
 
+    /* Promise */
     const promise = $.ajax(`${URL}${locEnt}`);
     promise.then(   
     function (data){
@@ -42,16 +41,3 @@ function handleSubmit(event){
 
     })
 }
-// Promises in JavaScript
-
-/* 
-    A Promise is an Object we receive in exhange for the eventual
-    success or failure of an asynchronous peocess
-
-    Asynchronous : Two or more task running on differnt timelines 
-
-    Asybc Programming allows us to keep a program running regardless
-    if certain parts of that program need more time than other
-
-*/
-
