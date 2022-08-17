@@ -1,6 +1,11 @@
 # Country Infomations 
 
-An app that shows many infomation about the country search for
+An app that shows many infomation about the country search for:
+- Name
+- Flag
+- Capital
+- Region 
+- Population
 
 ## Technologies Used
 - HTML

@@ -24,14 +24,9 @@ function handleSubmit(event){
     const promise = $.ajax(`${URL}${locEnt}`);
     promise.then(   
     function (data){
-        // Succes CallBack
+        // Succes CallBack from function render
         console.log('Data: ',data);
         render(data)
-        
-        // $country.text(data[0].name.common);
-        // $capital.text(data[0].capital);
-        // $region.text(data[0].continents);
-        // $lanuage.text(data[0].population);
     },
     function (error){
         // Failure CallBack
@@ -40,10 +35,11 @@ function handleSubmit(event){
     })
 }
 
+// This will print the data
 function render(countryData) {
     $main.html(`
       <h3>Country : ${countryData[0].name.common}</h3>
-      <img scr ="${countryData[0].flags.svg}" alt="${countryData[0].name.common}" />
+      <img src ="${countryData[0].flags.png}" alt="${countryData[0].name.common}" />
       <p>Capital: ${countryData[0].capital}</p>
       <p>Region: ${countryData[0].continents}</p>
       <p>Population: ${countryData[0].population}</p>
