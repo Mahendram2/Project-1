@@ -1,0 +1,28 @@
+* {
+    /*fixed size based on fixed height/width as opposed to content box (deafult) */
+    box-sizing: border-box;
+    margin: 0;
+  }
+  h1, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 		#F9F6EE;
+    margin: auto;
+    font-family: Geneva;
+    height: 100px;
+    
+  }
+
+  main {
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    background-color: 		#FAF9F6;
+    font-family: Geneva;
+    line-height:3.5em;
+  }
+ 
+body {
+    background-color: #F9F6EE;
+}

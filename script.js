@@ -12,10 +12,13 @@ const $input = $('input[type="text"]');
 $form.on('submit',handleSubmit);
 
 /* Functions */
+
+handleSubmit();
+
 function handleSubmit(event){
     event.preventDefault();
 
-    const locEnt = $input.val();
+    const locEnt = $input.val() || 'Japan';
     console.log('Submitted', locEnt);
     
     if(!locEnt) return;
@@ -42,6 +45,8 @@ function render(countryData) {
       <img src ="${countryData[0].flags.png}" alt="${countryData[0].name.common}" />
       <p>Capital: ${countryData[0].capital}</p>
       <p>Region: ${countryData[0].continents}</p>
+      <p>Subregion: ${countryData[0].subregion}</p>
       <p>Population: ${countryData[0].population}</p>
+      <p>Timezones: ${countryData[0].timezones}</p>
     `)
 }
