@@ -16,9 +16,9 @@ $form.on('submit',handleSubmit);
 handleSubmit();
 
 function handleSubmit(event){
-    event.preventDefault();
+  event &&  event.preventDefault();
 
-    const locEnt = $input.val() || 'Japan';
+    const locEnt = $input.val() || 'Brunei';
     console.log('Submitted', locEnt);
     
     if(!locEnt) return;
