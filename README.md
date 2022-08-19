@@ -24,7 +24,7 @@ An app that shows many infomation about the country search for:
 
 ## Getting Started
 
-[Click here](https://mahendracountries.netlify.app/) to see the deployed app!
+[Click here](https://mahiproject1.netlify.app/) to see the deployed app!
 
 ## Future Enhancements
 - View all Countries of selected continents.
