@@ -17,6 +17,10 @@ An app that shows many infomation about the country search for:
 
 ## Screenshots
 
+![image](https://i.ibb.co/5KJBYQZ/Screen-Shot-2022-08-18-at-9-33-58-AM.png)
+
+Shows the content of the country
+![image](https://i.ibb.co/XtKtZFg/Screen-Shot-2022-08-18-at-9-34-32-AM.png)
 
 
 ## Getting Started
